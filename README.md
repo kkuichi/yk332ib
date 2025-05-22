@@ -4,7 +4,7 @@ This repository contains all files related to my bachelor thesis project on dete
 
 ## 📁 Contents
 
-- `model/` – Fine-tuned and base LLMs (quantized in `q4_k_m` format).
+- `model/` – Fine-tuned LLM (quantized in `q4_k_m` format).
 - `training/` – Code used to fine-tune the models.
 - `testing/` – Code to test the trained models on new data.
 - `data_prep/` – Scripts for cleaning and preparing the dataset.
