@@ -1,14 +1,71 @@
-# Detection of Antisocial Behavior using LLMs
+# 🧠 Detection of Antisocial Behavior using LLMs
 
-This repository contains all files related to my bachelor thesis project on detecting antisocial behavior using Large Language Models (LLMs).
+This repository contains the full codebase and models from my bachelor thesis project focused on detecting antisocial and toxic behavior using Large Language Models (LLMs).
 
-## 📁 Contents
+The main goal of this project was to fine-tune a LLaMA 3.2 model to classify comments into six toxicity categories, with experiments using prompt variations (with and without SYSTEM messages) and quantized model formats (q4_k_m).
 
-- `model/` – Fine-tuned LLM (quantized in `q4_k_m` format).
-- `training/` – Code used to fine-tune the models.
-- `testing/` – Code to test the trained models on new data.
-- `data_prep/` – Scripts for cleaning and preparing the dataset.
-- `prompts/` – Prompt templates for inference (with and without SYSTEM message).
+---
 
-Everything here was used to train, test, and experiment with LLMs for toxic comment classification.
+## 📦 Repository Contents
 
+### 🔍 Models (`/models`)
+- Quantized models in `q4_k_m` format.
+- Versions **with** and **without** the SYSTEM prompt message.
+- Includes base model before training.
+
+### 🧪 Testing (`/testing`)
+- Scripts to run inference on new comments.
+- Accepts CSV input and outputs category predictions.
+
+### 🏋️ Training (`/training`)
+- Code to fine-tune models using prepared datasets.
+- Works with Unsloth or similar fine-tuning libraries.
+
+### 🧹 Data Preparation (`/data_prep`)
+- Scripts to clean and prepare raw data.
+- Converts data into proper format for training and inference.
+
+### 📄 Prompts (`/prompts`)
+- Templates for LLM input:
+  - `with_SYSTEM`: includes system-level instruction block.
+  - `no_SYSTEM`: simple prompt without system message.
+
+---
+
+## ✅ Features
+
+- Classification of text into:
+  - toxic
+  - severe_toxic
+  - obscene
+  - threat
+  - insult
+  - identity_hate
+- Uses `yes`/`no` labeling format for simplicity.
+- Lightweight quantized models (`q4_k_m`) for efficient inference.
+
+---
+
+## 🧑‍💻 Author
+
+Bachelor Thesis by **Yurii Kostiuk**  
+Faculty of Electrical Engineering and Informatics, TUKE
+
+---
+
+## 📌 Notes
+
+- This project is for research and educational purposes.
+- Model outputs should be evaluated responsibly in real-world scenarios.
+
+### 📚 Libraries Used in This Project
+
+| Library             | Version     | Purpose                                             |
+|---------------------|-------------|-----------------------------------------------------|
+| `pandas`            | 1.5.3       | Data manipulation and preprocessing                 |
+| `tqdm`              | 4.67.1      | Progress bars for loops                             |
+| `unsloth`           | 2025.3.17   | Fine-tuning LLaMA models                            |
+| `scikit-learn`      | 1.3.0       | Evaluation metrics (e.g., F1 score, accuracy)       |
+| `langchain-ollama`  | 0.3.0       | Using LLMs via LangChain and Ollama integration     |
+| `torch`             | 2.5.1       | Core deep learning framework                        |
+| `transformers`      | 4.48.0      | Hugging Face library for working with LLMs          |
