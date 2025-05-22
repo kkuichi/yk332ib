@@ -8,7 +8,7 @@ The main goal of this project was to fine-tune a LLaMA 3.2 model to classify com
 
 ##  Repository Contents
 
-### 🔍 Models (`/models`)
+### Models (`/models`)
 - Quantized models in `q4_k_m` format.
 - Versions **with** and **without** the SYSTEM prompt message.
 - Includes base model before training.
@@ -25,7 +25,7 @@ The main goal of this project was to fine-tune a LLaMA 3.2 model to classify com
 - Scripts to clean and prepare raw data.
 - Converts data into proper format for training and inference.
 
-### 📄 Prompts (`/prompts`)
+###  Prompts (`/prompts`)
 - Templates for LLM input:
   - `with_SYSTEM`: includes system-level instruction block.
   - `no_SYSTEM`: simple prompt without system message.
