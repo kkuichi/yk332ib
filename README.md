@@ -1,4 +1,4 @@
-# 🧠 Detection of Antisocial Behavior using LLMs
+# Detection of Antisocial Behavior using LLMs
 
 This repository contains the full codebase and models from my bachelor thesis project focused on detecting antisocial and toxic behavior using Large Language Models (LLMs).
 
@@ -6,22 +6,22 @@ The main goal of this project was to fine-tune a LLaMA 3.2 model to classify com
 
 ---
 
-## 📦 Repository Contents
+##  Repository Contents
 
 ### 🔍 Models (`/models`)
 - Quantized models in `q4_k_m` format.
 - Versions **with** and **without** the SYSTEM prompt message.
 - Includes base model before training.
 
-### 🧪 Testing (`/testing`)
+###  Testing (`/testing`)
 - Scripts to run inference on new comments.
 - Accepts CSV input and outputs category predictions.
 
-### 🏋️ Training (`/training`)
+###  Training (`/training`)
 - Code to fine-tune models using prepared datasets.
 - Works with Unsloth or similar fine-tuning libraries.
 
-### 🧹 Data Preparation (`/data_prep`)
+###  Data Preparation (`/data_prep`)
 - Scripts to clean and prepare raw data.
 - Converts data into proper format for training and inference.
 
@@ -32,7 +32,7 @@ The main goal of this project was to fine-tune a LLaMA 3.2 model to classify com
 
 ---
 
-### 📊 Dataset
+###  Dataset
 
 This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset, released by **Google/Jigsaw in 2018**.
 
@@ -50,12 +50,12 @@ This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset,
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - This project is for research and educational purposes.
 - Model outputs should be evaluated responsibly in real-world scenarios.
 
-### 📚 Libraries Used in This Project
+###  Libraries Used in This Project
 
 | Library             | Version     | Purpose                                             |
 |---------------------|-------------|-----------------------------------------------------|
@@ -69,7 +69,7 @@ This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset,
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 Bachelor Thesis by **Yurii Kostiuk**  
 Faculty of Electrical Engineering and Informatics, TUKE
