@@ -32,8 +32,11 @@ The main goal of this project was to fine-tune a LLaMA 3.2 model to classify com
 
 ---
 
-## ✅ Features
+### 📊 Dataset
 
+This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset, released by **Google/Jigsaw in 2018**.
+
+- [Kaggle dataset link](https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge)
 - Classification of text into:
   - toxic
   - severe_toxic
