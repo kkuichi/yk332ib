@@ -1,0 +1,20 @@
+FROM llama3.2
+
+TEMPLATE """Below is an instruction for a text classification task.
+Analyze a sentence and classify it into exactly six toxicity categories: toxic, severe toxic, obscene, threat, insult, identity hate.
+For each category, output "yes" if the category is present in the sentence, and "no" otherwise.{{ if .Prompt }}
+>>> Sentence:
+{{ .Prompt }}{{ end }}
+>>> Which toxicity categories from toxic, severe toxic, obscene, threat, insult or identity hate does the sentence have?
+{{ .Response }}<|end_of_text|>"""
+
+PARAMETER stop "<|python_tag|>"
+PARAMETER stop "<|start_header_id|>"
+PARAMETER stop "<|eot_id|>"
+PARAMETER stop "<|finetune_right_pad_id|>"
+PARAMETER stop "<|eom_id|>"
+PARAMETER stop "<|end_header_id|>"
+PARAMETER stop "<|end_of_text|>"
+PARAMETER stop "<|reserved_special_token_"
+PARAMETER temperature 1.5
+PARAMETER min_p 0.1
