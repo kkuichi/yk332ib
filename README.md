@@ -47,12 +47,6 @@ This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset,
 - Uses `yes`/`no` labeling format for simplicity.
 - Lightweight quantized models (`q4_k_m`) for efficient inference.
 
----
-
-## 🧑‍💻 Author
-
-Bachelor Thesis by **Yurii Kostiuk**  
-Faculty of Electrical Engineering and Informatics, TUKE
 
 ---
 
@@ -72,3 +66,10 @@ Faculty of Electrical Engineering and Informatics, TUKE
 | `langchain-ollama`  | 0.3.0       | Using LLMs via LangChain and Ollama integration     |
 | `torch`             | 2.5.1       | Core deep learning framework                        |
 | `transformers`      | 4.48.0      | Hugging Face library for working with LLMs          |
+
+---
+
+## 🧑‍💻 Author
+
+Bachelor Thesis by **Yurii Kostiuk**  
+Faculty of Electrical Engineering and Informatics, TUKE
